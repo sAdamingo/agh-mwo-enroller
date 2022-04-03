@@ -40,6 +40,5 @@ public class ParticipantRestController {
 	@RequestMapping(value = "/{login}", method = RequestMethod.DELETE)
 	public ResponseEntity<?> deleteParticipant(@PathVariable("login") String login) {
 		return participantService.deleteParticipant(login);
-
 	}
 }
